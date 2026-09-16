@@ -1,0 +1,31 @@
+{
+  "id": "masterpiece",
+  "label": "masterpiece",
+  "labelJa": "5th Anniversary Live masterpiece",
+  "source": "https://5th.uishigure.com/masterpiece/",
+  "colors": {
+    "brand": "#d73e54",
+    "brandDeep": "#b83245",
+    "brandDarker": "#3c3034",
+    "ink": "#3c3034",
+    "inkSoft": "#2c292a",
+    "paper": "#f2f3e1",
+    "gold": "#f6f2a7",
+    "goldSoft": "#f6f2a7",
+    "accent": "#d73e54",
+    "muted": "#cac7c8",
+    "surface": "#f8f8f8",
+    "white": "#ffffff"
+  },
+  "fonts": {
+    "body": "Inter",
+    "display": "Murecho",
+    "num": "Inter",
+    "aux": "Murecho"
+  },
+  "mood": "gallery / cream paper / framed art",
+  "pptBgRole": "surface",
+  "pptFgRole": "ink",
+  "pptPanelRole": "paper",
+  "pptPanelFgRole": "ink"
+}

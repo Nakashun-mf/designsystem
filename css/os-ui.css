@@ -1,0 +1,266 @@
+/**
+ * Uindows / Uitopia-inspired desktop OS UI components
+ * Patterns extracted from fan Uindow OS + official Uitopia computer concept.
+ * Do not redistribute original Uindow OS assets.
+ */
+
+[data-theme="uindows"] {
+  --ds-brand: #ff7b87;
+  --ds-brand-deep: #ff7c87;
+  --ds-brand-darker: #e86472;
+  --ds-ink: #8a8077;
+  --ds-ink-soft: #b6a3a8;
+  --ds-paper: #ffffff;
+  --ds-cream: #fff0ed;
+  --ds-surface: #fff0ed;
+  --ds-sky: #ffefe6;
+  --ds-sky-deep: #ffefe6;
+  --ds-cloud: #ffffff;
+  --ds-blush: #ff9ea6;
+  --ds-peach: #ffefe6;
+  --ds-coral: #ff7b87;
+  --ds-lavender: #7b97f6;
+  --ds-umbrella: #7b97f6;
+  --ds-umbrella-soft: #9bb0f8;
+  --ds-gold: #ffd68b;
+  --ds-gold-soft: #fff1eb;
+  --ds-mint: #f4f8f3;
+  --ds-bokeh: #fff1f0;
+  --ds-accent: #7b97f6;
+  --ds-muted: #b6a3a8;
+  --ds-taupe: #8a7f78;
+  --ds-panel: #fdf0ea;
+  --ds-on-brand: #ffefe6;
+  --ds-on-paper: #8a8077;
+  --ds-radius-btn: 8px;
+  --ds-radius: 10px;
+  --ds-btn-h: 40px;
+  --ds-font-body: "Zen Maru Gothic", "M PLUS Rounded 1c", YuGothic, "Hiragino Sans", sans-serif;
+  --ds-font-display: "M PLUS Rounded 1c", "Zen Maru Gothic", sans-serif;
+  --ds-font-display-en: "M PLUS Rounded 1c", "Zen Maru Gothic", sans-serif;
+  --ds-font-num: "M PLUS Rounded 1c", sans-serif;
+  --ds-font-aux: "M PLUS Rounded 1c", sans-serif;
+  --ds-font-weight-body: 500;
+  --ds-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ds-duration: 0.25s;
+  --ds-shadow: 10px 10px 0 rgba(138, 128, 119, 0.45);
+  --ds-shadow-soft: 6px 6px 0 rgba(138, 128, 119, 0.28);
+  --ds-glow: none;
+  --ds-pattern: radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.9) 0 18%, transparent 19%),
+    radial-gradient(circle at 78% 30%, rgba(255, 255, 255, 0.75) 0 12%, transparent 13%),
+    linear-gradient(160deg, #ff9ea6 0%, #ff7b87 45%, #ffefe6 100%);
+  color-scheme: light;
+}
+
+/* ---- Desktop shell ---- */
+.ds-os-desktop {
+  position: relative;
+  min-height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--ds-pattern);
+  box-shadow: var(--ds-shadow);
+  color: var(--ds-ink);
+}
+
+.ds-os-menubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 36px;
+  padding: 0 0.85rem;
+  background: var(--ds-cream);
+  font-family: var(--ds-font-display-en);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ds-ink);
+}
+
+.ds-os-menubar__left,
+.ds-os-menubar__right {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.ds-os-menubar__item {
+  cursor: default;
+  padding: 0.15rem 0.35rem;
+  border-radius: 8px;
+}
+.ds-os-menubar__item:hover {
+  background: var(--ds-bokeh, #fff1f0);
+  color: var(--ds-ink-soft);
+}
+
+.ds-os-stage {
+  position: relative;
+  min-height: 420px;
+  padding: 1.25rem;
+}
+
+.ds-os-icons {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 72px);
+  gap: 14px;
+}
+
+.ds-os-icon {
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 8px;
+  background: var(--ds-taupe, #8a7f78);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  box-shadow: none;
+}
+.ds-os-icon:active {
+  transform: scale(0.9);
+}
+.ds-os-icon__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* ---- Window chrome ---- */
+.ds-os-window {
+  position: relative;
+  width: min(100%, 520px);
+  background: var(--ds-paper);
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 rgba(138, 128, 119, 0.45);
+  overflow: hidden;
+}
+
+.ds-os-titlebar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 0.75rem;
+  font-family: var(--ds-font-display-en);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.ds-os-titlebar--red {
+  background: #ff7b87;
+  color: #ffefe6;
+}
+.ds-os-titlebar--gray {
+  background: #8a8077;
+  color: #fdf0ea;
+}
+.ds-os-titlebar--blue {
+  background: #7b97f6;
+  color: #f4f8f3;
+}
+.ds-os-titlebar--yellow {
+  background: #ffd68b;
+  color: #fff1eb;
+}
+
+.ds-os-controls {
+  display: flex;
+  gap: 8px;
+  z-index: 1;
+}
+.ds-os-controls button {
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+.ds-os-titlebar--red .ds-os-controls button {
+  background: #ffefe6;
+}
+.ds-os-titlebar--gray .ds-os-controls button {
+  background: #fdf0ea;
+}
+.ds-os-titlebar--blue .ds-os-controls button {
+  background: #f4f8f3;
+}
+.ds-os-titlebar--yellow .ds-os-controls button {
+  background: #fff0f1;
+}
+
+.ds-os-caption {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.ds-os-body {
+  padding: 1rem 1.1rem 1.2rem;
+  color: #222;
+  background: #fff;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.ds-os-login {
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  border-radius: 16px;
+  background: #ff7b87;
+  color: #fff2ed;
+  text-align: center;
+  box-shadow: var(--ds-shadow);
+}
+.ds-os-login__title {
+  margin: 0 0 0.5rem;
+  font-family: var(--ds-font-display-en);
+  font-size: 1.8rem;
+}
+.ds-os-login__btn {
+  margin-top: 1rem;
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
+  background: #fff0ed;
+  color: #ff7b87;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ds-os-dock {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: rgba(138, 128, 119, 0.55);
+  backdrop-filter: blur(6px);
+}
+.ds-os-dock span {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #fff0ed;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+}

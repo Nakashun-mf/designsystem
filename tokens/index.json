@@ -1,0 +1,18 @@
+{
+  "name": "shigure-ui-event-design-system",
+  "version": "1.3.0",
+  "primaryTheme": "soft-cloud",
+  "themes": [
+    "soft-cloud",
+    "uindows",
+    "wishing-umbrella",
+    "uitopia",
+    "masterpiece",
+    "anniversary-5th"
+  ],
+  "references": [
+    "https://www.youtube.com/watch?v=qR2pggPX_Sc",
+    "https://leiros.cloudfree.jp/uios/uios.html",
+    "https://7th.uishigure.com/uitopia/"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "soft-cloud",
+  "label": "Wishing Fluffy",
+  "labelJa": "ふわふわアンブレラ世界観（MV寄り）",
+  "source": "https://www.youtube.com/watch?v=qR2pggPX_Sc",
+  "mood": "warm peach glow / fluffy cute / blue umbrella / soft bokeh / magical rainy day",
+  "isPrimary": true,
+  "colors": {
+    "brand": "#f2a0b0",
+    "brandDeep": "#e8879a",
+    "brandDarker": "#d46b82",
+    "ink": "#5c3d4a",
+    "inkSoft": "#8a6574",
+    "paper": "#fff6f2",
+    "cream": "#fff9f5",
+    "peach": "#ffd2c4",
+    "blush": "#ffc2cd",
+    "coral": "#f0a090",
+    "lavender": "#cbb6dc",
+    "umbrella": "#3f7fd4",
+    "umbrellaSoft": "#6ea0e6",
+    "gold": "#e8c27a",
+    "mint": "#bfe8d4",
+    "bokeh": "#ffe8f0",
+    "sky": "#f7e6ef",
+    "skyDeep": "#e8d0e0",
+    "cloud": "#ffffff",
+    "surface": "#fff0eb",
+    "muted": "#e8d5d8",
+    "white": "#ffffff"
+  },
+  "fonts": {
+    "body": "Zen Maru Gothic",
+    "display": "Zen Maru Gothic",
+    "displayEn": "Amarante",
+    "num": "M PLUS Rounded 1c",
+    "aux": "Young Serif"
+  },
+  "radii": {
+    "button": "999px",
+    "panel": "32px",
+    "cloud": "999px",
+    "pom": "999px"
+  },
+  "motifs": ["umbrella", "pom-pom", "bokeh", "ruffle", "soft-rain-dots"],
+  "pptBgRole": "sky",
+  "pptFgRole": "ink",
+  "pptPanelRole": "cream",
+  "pptPanelFgRole": "ink"
+}

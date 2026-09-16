@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+node_modules/
+*.log
+.cache/
+tmp/
+temp/
+*.pptx.tmp
+dist/
+*.zip
+!ppt/templates/**/*.pptx
