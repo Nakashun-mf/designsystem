@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="[DNÇ¶¤ó Þü¯">
+  <!-- Soft cloud -->
+  <ellipse cx="46" cy="78" rx="28" ry="22" fill="#E8F3FB"/>
+  <ellipse cx="70" cy="74" rx="34" ry="26" fill="#F7FBFF"/>
+  <ellipse cx="90" cy="80" rx="24" ry="18" fill="#D2E6F5"/>
+  <ellipse cx="64" cy="88" rx="42" ry="16" fill="#EEF6FC"/>
+  <!-- Gear (technical) -->
+  <g transform="translate(64 52)">
+    <circle r="18" fill="#00315E"/>
+    <circle r="8" fill="#F7FBFF"/>
+    <g fill="#00315E">
+      <rect x="-4" y="-28" width="8" height="12" rx="2"/>
+      <rect x="-4" y="16" width="8" height="12" rx="2"/>
+      <rect x="-28" y="-4" width="12" height="8" rx="2"/>
+      <rect x="16" y="-4" width="12" height="8" rx="2"/>
+      <rect x="-22" y="-22" width="10" height="8" rx="2" transform="rotate(-45)"/>
+      <rect x="12" y="14" width="10" height="8" rx="2" transform="rotate(-45)"/>
+      <rect x="14" y="-22" width="10" height="8" rx="2" transform="rotate(45)"/>
+      <rect x="-22" y="14" width="10" height="8" rx="2" transform="rotate(45)"/>
+    </g>
+    <!-- Noritz red accent tooth -->
+    <rect x="-4" y="-28" width="8" height="12" rx="2" fill="#E8380D"/>
+  </g>
+</svg>

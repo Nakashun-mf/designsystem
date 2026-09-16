@@ -1,0 +1,44 @@
+{
+  "id": "seigi",
+  "label": "Seigi Soft",
+  "labelJa": "せいぎデザイン（やわらか技術）",
+  "organization": "大成工業株式会社",
+  "department": "生産技術室",
+  "systemName": "せいぎデザイン",
+  "mood": "soft approachable / technical calm / taisei blue / noritz red accents",
+  "isPrimary": true,
+  "colors": {
+    "brand": "#00315E",
+    "brandDeep": "#002445",
+    "brandLight": "#3477B6",
+    "accent": "#E8380D",
+    "accentSoft": "#F07355",
+    "ink": "#1F2A33",
+    "inkSoft": "#5A6B78",
+    "paper": "#F7FBFF",
+    "cream": "#F3F8FC",
+    "sky": "#E8F3FB",
+    "skyDeep": "#D2E6F5",
+    "cloud": "#FFFFFF",
+    "surface": "#EEF6FC",
+    "muted": "#D5E2EC",
+    "success": "#2F8F6B",
+    "warning": "#E6A23C",
+    "danger": "#E8380D",
+    "white": "#FFFFFF"
+  },
+  "fonts": {
+    "body": "Yu Gothic",
+    "display": "Yu Gothic",
+    "num": "Yu Gothic"
+  },
+  "radii": {
+    "button": "999px",
+    "panel": "28px",
+    "cloud": "999px"
+  },
+  "pptBgRole": "sky",
+  "pptFgRole": "ink",
+  "pptPanelRole": "cloud",
+  "pptPanelFgRole": "ink"
+}

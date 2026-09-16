@@ -12,6 +12,8 @@ node_modules/
 tmp/
 temp/
 *.pptx.tmp
-dist/
+/dist/
 *.zip
+!seigi-design/dist/
+!seigi-design/dist/**
 !ppt/templates/**/*.pptx

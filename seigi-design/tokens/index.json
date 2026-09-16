@@ -1,0 +1,17 @@
+{
+  "name": "seigi-design",
+  "version": "1.0.0",
+  "primaryTheme": "seigi",
+  "organization": "大成工業株式会社",
+  "department": "生産技術室",
+  "themes": ["seigi"],
+  "colors": {
+    "taiseiBlue": "#00315E",
+    "taiseiBlueLight": "#3477B6",
+    "noritzRed": "#E8380D"
+  },
+  "references": [
+    "https://www.netukou-taisei.co.jp/",
+    "https://www.noritz.co.jp/"
+  ]
+}
