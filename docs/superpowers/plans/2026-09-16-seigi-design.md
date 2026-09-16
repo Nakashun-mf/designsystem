@@ -23,4 +23,4 @@
 - [x] Task 2: PPT 生成
 - [x] Task 3: Excel 生成
 - [x] Task 4: dist ZIP・デモ・ルート案内
-- [ ] Task 5: Box アップロード（認証不可時は手順明記＋成果物配置）
+- [ ] Task 5: Box アップロード（MCP認証タイムアウトのため手動手順を `docs/BOX.md` に記載。ZIPは `dist/` と artifacts に配置済み）
