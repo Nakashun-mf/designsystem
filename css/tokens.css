@@ -1,0 +1,244 @@
+/**
+ * Primary: Wishing Fluffy (soft-cloud)
+ * Inspired by the warm peach / blue-umbrella / soft-bokeh mood of
+ * Wishing Umbrella anime MV — fluffy cute magical everyday.
+ * https://www.youtube.com/watch?v=qR2pggPX_Sc
+ */
+
+:root,
+[data-theme="soft-cloud"] {
+  --ds-brand: #f2a0b0;
+  --ds-brand-deep: #e8879a;
+  --ds-brand-darker: #d46b82;
+  --ds-ink: #5c3d4a;
+  --ds-ink-soft: #8a6574;
+  --ds-paper: #fff6f2;
+  --ds-cream: #fff9f5;
+  --ds-surface: #fff0eb;
+  --ds-sky: #f7e6ef;
+  --ds-sky-deep: #e8d0e0;
+  --ds-cloud: #ffffff;
+  --ds-blush: #ffc2cd;
+  --ds-peach: #ffd2c4;
+  --ds-coral: #f0a090;
+  --ds-lavender: #cbb6dc;
+  --ds-umbrella: #3f7fd4;
+  --ds-umbrella-soft: #6ea0e6;
+  --ds-gold: #e8c27a;
+  --ds-gold-soft: #f3d9a8;
+  --ds-mint: #bfe8d4;
+  --ds-bokeh: #ffe8f0;
+  --ds-accent: #3f7fd4;
+  --ds-muted: #e8d5d8;
+  --ds-on-brand: #ffffff;
+  --ds-on-paper: #5c3d4a;
+  --ds-radius-btn: 999px;
+  --ds-radius: 32px;
+  --ds-radius-cloud: 999px;
+  --ds-btn-h: 52px;
+  --ds-font-body: "Zen Maru Gothic", "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN",
+    "Yu Gothic", sans-serif;
+  --ds-font-display: "Zen Maru Gothic", "M PLUS Rounded 1c", sans-serif;
+  --ds-font-display-en: Amarante, "Young Serif", Georgia, serif;
+  --ds-font-num: "M PLUS Rounded 1c", "Zen Maru Gothic", sans-serif;
+  --ds-font-aux: "Young Serif", Amarante, Georgia, serif;
+  --ds-font-weight-body: 500;
+  --ds-ease: cubic-bezier(0.34, 1.25, 0.64, 1);
+  --ds-duration: 0.5s;
+  --ds-border: 0 solid transparent;
+  --ds-shadow: 0 18px 42px rgba(232, 135, 154, 0.22);
+  --ds-shadow-soft: 0 12px 30px rgba(63, 127, 212, 0.14);
+  --ds-glow: 0 0 40px rgba(255, 194, 205, 0.55);
+  --ds-pattern: radial-gradient(circle at 12% 18%, rgba(255, 232, 240, 0.95) 0%, transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(203, 182, 220, 0.45) 0%, transparent 32%),
+    radial-gradient(circle at 70% 78%, rgba(255, 210, 196, 0.55) 0%, transparent 36%),
+    radial-gradient(circle at 28% 72%, rgba(110, 160, 230, 0.18) 0%, transparent 30%),
+    linear-gradient(165deg, #fff6f2 0%, #f7e6ef 42%, #ffe8f0 72%, #fff0eb 100%);
+  color-scheme: light;
+}
+
+[data-theme="wishing-umbrella"] {
+  --ds-brand: #aa1414;
+  --ds-brand-deep: #8e0000;
+  --ds-brand-darker: #7c0017;
+  --ds-ink: #2d0000;
+  --ds-ink-soft: #5a2020;
+  --ds-paper: #fff8ec;
+  --ds-cream: #fff8ec;
+  --ds-surface: #310101;
+  --ds-sky: #2d0000;
+  --ds-sky-deep: #1a0000;
+  --ds-cloud: #fff8ec;
+  --ds-blush: #ffed8c;
+  --ds-peach: #ffda00;
+  --ds-coral: #e10f20;
+  --ds-lavender: #7c0017;
+  --ds-umbrella: #2c3c9f;
+  --ds-umbrella-soft: #4a5ec0;
+  --ds-gold: #ffda00;
+  --ds-gold-soft: #ffed8c;
+  --ds-mint: #fff8ec;
+  --ds-bokeh: #ffed8c;
+  --ds-accent: #2c3c9f;
+  --ds-muted: #b4b4b4;
+  --ds-on-brand: #fff8ec;
+  --ds-on-paper: #2d0000;
+  --ds-radius-btn: 999px;
+  --ds-radius: 28px;
+  --ds-btn-h: 50px;
+  --ds-font-body: "Zen Maru Gothic", "IBM Plex Sans JP", sans-serif;
+  --ds-font-display: Amarante, "Zen Maru Gothic", serif;
+  --ds-font-display-en: Amarante, serif;
+  --ds-font-num: "Rozha One", "M PLUS Rounded 1c", serif;
+  --ds-font-aux: "Young Serif", serif;
+  --ds-font-weight-body: 600;
+  --ds-shadow: 0 16px 36px rgba(170, 20, 20, 0.28);
+  --ds-shadow-soft: 0 10px 24px rgba(255, 218, 0, 0.2);
+  --ds-glow: 0 0 36px rgba(255, 218, 0, 0.25);
+  --ds-pattern: radial-gradient(circle at 20% 20%, rgba(255, 218, 0, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(170, 20, 20, 0.4), transparent 45%),
+    linear-gradient(180deg, #2d0000 0%, #110000 100%);
+  color-scheme: dark;
+}
+
+[data-theme="uitopia"] {
+  --ds-brand: #ec4b78;
+  --ds-brand-deep: #c93a62;
+  --ds-brand-darker: #a83254;
+  --ds-ink: #282828;
+  --ds-ink-soft: #646464;
+  --ds-paper: #ffffff;
+  --ds-cream: #ffffff;
+  --ds-surface: #f3f3f3;
+  --ds-sky: #f7f7ff;
+  --ds-sky-deep: #ececff;
+  --ds-cloud: #ffffff;
+  --ds-blush: #f17a9c;
+  --ds-peach: #ffd0e0;
+  --ds-coral: #ec4b78;
+  --ds-lavender: #645eff;
+  --ds-umbrella: #645eff;
+  --ds-umbrella-soft: #8a85ff;
+  --ds-gold: #645eff;
+  --ds-gold-soft: #f17a9c;
+  --ds-mint: #d0ffe8;
+  --ds-bokeh: #ffe0ec;
+  --ds-accent: #645eff;
+  --ds-muted: #b4b4b4;
+  --ds-on-brand: #ffffff;
+  --ds-on-paper: #282828;
+  --ds-radius-btn: 20px;
+  --ds-radius: 20px;
+  --ds-btn-h: 44px;
+  --ds-font-body: "DotGothic16", "Zen Maru Gothic", monospace, sans-serif;
+  --ds-font-display: "DotGothic16", monospace, sans-serif;
+  --ds-font-display-en: "DotGothic16", monospace, sans-serif;
+  --ds-font-num: "DotGothic16", monospace, sans-serif;
+  --ds-font-aux: "DotGothic16", monospace, sans-serif;
+  --ds-font-weight-body: 400;
+  --ds-shadow: 4px 4px 0 rgba(100, 94, 255, 0.25);
+  --ds-shadow-soft: 0 8px 20px rgba(236, 75, 120, 0.15);
+  --ds-glow: 0 0 24px rgba(100, 94, 255, 0.2);
+  --ds-pattern: linear-gradient(180deg, #f7f7ff 0%, #ffeef4 100%);
+  color-scheme: light;
+}
+
+[data-theme="masterpiece"] {
+  --ds-brand: #d73e54;
+  --ds-brand-deep: #b83245;
+  --ds-brand-darker: #3c3034;
+  --ds-ink: #3c3034;
+  --ds-ink-soft: #6a5e62;
+  --ds-paper: #f2f3e1;
+  --ds-cream: #f8f8f0;
+  --ds-surface: #f8f8f8;
+  --ds-sky: #f6f2a7;
+  --ds-sky-deep: #f2f3e1;
+  --ds-cloud: #ffffff;
+  --ds-blush: #f6f2a7;
+  --ds-peach: #f2f3e1;
+  --ds-coral: #d73e54;
+  --ds-lavender: #cac7c8;
+  --ds-umbrella: #3c3034;
+  --ds-umbrella-soft: #6a5e62;
+  --ds-gold: #f6f2a7;
+  --ds-gold-soft: #f6f2a7;
+  --ds-mint: #e8f0d7;
+  --ds-bokeh: #f6f2a7;
+  --ds-accent: #d73e54;
+  --ds-muted: #cac7c8;
+  --ds-on-brand: #ffffff;
+  --ds-on-paper: #3c3034;
+  --ds-radius-btn: 999px;
+  --ds-radius: 24px;
+  --ds-btn-h: 48px;
+  --ds-font-body: "Zen Maru Gothic", Inter, sans-serif;
+  --ds-font-display: Murecho, "Zen Maru Gothic", serif;
+  --ds-font-display-en: Murecho, serif;
+  --ds-font-num: "M PLUS Rounded 1c", Inter, sans-serif;
+  --ds-font-aux: Murecho, serif;
+  --ds-font-weight-body: 400;
+  --ds-shadow: 0 14px 32px rgba(215, 62, 84, 0.14);
+  --ds-shadow-soft: 0 10px 24px rgba(246, 242, 167, 0.35);
+  --ds-glow: 0 0 28px rgba(246, 242, 167, 0.45);
+  --ds-pattern: radial-gradient(rgba(60, 48, 52, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, #f8f8f8 0%, #f2f3e1 100%);
+  --ds-pattern-size: 4px 4px, auto;
+  color-scheme: light;
+}
+
+[data-theme="anniversary-5th"] {
+  --ds-brand: #e63644;
+  --ds-brand-deep: #c92c38;
+  --ds-brand-darker: #201e1e;
+  --ds-ink: #201e1e;
+  --ds-ink-soft: #665a5a;
+  --ds-paper: #fbeecc;
+  --ds-cream: #fff6e4;
+  --ds-surface: #ffffff;
+  --ds-sky: #ecffc5;
+  --ds-sky-deep: #e8f0d7;
+  --ds-cloud: #ffffff;
+  --ds-blush: #fbeecc;
+  --ds-peach: #ffe8c8;
+  --ds-coral: #e63644;
+  --ds-lavender: #e8d0e0;
+  --ds-umbrella: #e63644;
+  --ds-umbrella-soft: #ff6b76;
+  --ds-gold: #ecffc5;
+  --ds-gold-soft: #e8f0d7;
+  --ds-mint: #ecffc5;
+  --ds-bokeh: #fff0c8;
+  --ds-accent: #e63644;
+  --ds-muted: #cccccc;
+  --ds-on-brand: #ffffff;
+  --ds-on-paper: #201e1e;
+  --ds-radius-btn: 999px;
+  --ds-radius: 28px;
+  --ds-btn-h: 46px;
+  --ds-font-body: "Zen Maru Gothic", "M PLUS 1p", sans-serif;
+  --ds-font-display: "M PLUS Rounded 1c", "M PLUS 1p", sans-serif;
+  --ds-font-display-en: "M PLUS Rounded 1c", sans-serif;
+  --ds-font-num: "M PLUS Rounded 1c", sans-serif;
+  --ds-font-aux: "Zen Maru Gothic", sans-serif;
+  --ds-font-weight-body: 400;
+  --ds-shadow: 0 14px 32px rgba(230, 54, 68, 0.14);
+  --ds-shadow-soft: 0 10px 24px rgba(251, 238, 204, 0.5);
+  --ds-glow: 0 0 28px rgba(236, 255, 197, 0.4);
+  --ds-pattern: linear-gradient(135deg, #fbeecc 0%, #fff8e8 50%, #f5e4c0 100%);
+  color-scheme: light;
+}
+
+:root {
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+  --ds-space-5: 24px;
+  --ds-space-6: 32px;
+  --ds-space-7: 48px;
+  --ds-space-8: 64px;
+  --ds-space-9: 96px;
+  --ds-content: 1080px;
+  --ds-line: 1.75;
+}

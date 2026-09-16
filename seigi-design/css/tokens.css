@@ -1,0 +1,103 @@
+:root,
+[data-theme="seigi"] {
+  --sg-brand: #00315e;
+  --sg-brand-deep: #002445;
+  --sg-brand-light: #3477b6;
+  --sg-accent: #e8380d;
+  --sg-accent-soft: #f07355;
+  --sg-ink: #1f2a33;
+  --sg-ink-soft: #5a6b78;
+  --sg-paper: #f7fbff;
+  --sg-cream: #f3f8fc;
+  --sg-sky: #e8f3fb;
+  --sg-sky-deep: #d2e6f5;
+  --sg-cloud: #ffffff;
+  --sg-surface: #eef6fc;
+  --sg-muted: #d5e2ec;
+  --sg-radius: 28px;
+  --sg-radius-pill: 999px;
+  --sg-font: "Yu Gothic", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  --sg-shadow: 0 16px 36px rgba(0, 49, 94, 0.14);
+  color: var(--sg-ink);
+  background: var(--sg-paper);
+  font-family: var(--sg-font);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(232, 243, 251, 0.95) 0%, transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(210, 230, 245, 0.55) 0%, transparent 32%),
+    linear-gradient(165deg, #f7fbff 0%, #e8f3fb 55%, #eef6fc 100%);
+}
+
+.sg-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.sg-brand-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sg-brand-row img {
+  width: 72px;
+  height: 72px;
+}
+
+.sg-kicker {
+  color: var(--sg-brand-light);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.sg-title {
+  margin: 0.2rem 0 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--sg-brand);
+}
+
+.sg-lead {
+  color: var(--sg-ink-soft);
+  line-height: 1.7;
+}
+
+.sg-card {
+  background: var(--sg-cloud);
+  border-radius: var(--sg-radius);
+  box-shadow: var(--sg-shadow);
+  padding: 1.25rem 1.4rem;
+  margin: 1rem 0;
+}
+
+.sg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 1.25rem;
+  border-radius: var(--sg-radius-pill);
+  background: var(--sg-brand);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sg-btn-accent {
+  background: var(--sg-accent);
+}
+
+.sg-swatch {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}

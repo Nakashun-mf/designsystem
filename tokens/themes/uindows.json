@@ -1,0 +1,68 @@
+{
+  "id": "uindows",
+  "label": "Uindows",
+  "labelJa": "ういんどうず風デスクトップOS UI",
+  "source": "https://leiros.cloudfree.jp/uios/uios.html",
+  "related": [
+    "https://7th.uishigure.com/uitopia/",
+    "https://www.youtube.com/watch?v=qR2pggPX_Sc"
+  ],
+  "mood": "coral desktop / chunky offset shadow / colored titlebars / taupe icons / soft OS parody",
+  "isPrimary": false,
+  "note": "ファン制作の Uindow OS および公式 Uitopia「コンピュータ」概念から抽出。アセット複製ではない。",
+  "colors": {
+    "brand": "#ff7b87",
+    "brandDeep": "#ff7c87",
+    "brandSoft": "#ff9ea6",
+    "ink": "#8a8077",
+    "inkSoft": "#b6a3a8",
+    "paper": "#ffffff",
+    "cream": "#fff0ed",
+    "creamDeep": "#ffefe6",
+    "panel": "#fdf0ea",
+    "taupe": "#8a7f78",
+    "blue": "#7b97f6",
+    "blueSoft": "#f4f8f3",
+    "yellow": "#ffd68b",
+    "yellowSoft": "#fff1eb",
+    "hover": "#fff1f0",
+    "login": "#ff7b87",
+    "shadow": "rgba(138, 128, 119, 0.45)",
+    "white": "#ffffff",
+    "black": "#000000",
+    "surface": "#fff0ed",
+    "sky": "#ffefe6",
+    "cloud": "#ffffff",
+    "blush": "#ff7b87",
+    "peach": "#ffefe6",
+    "lavender": "#7b97f6",
+    "umbrella": "#7b97f6",
+    "gold": "#ffd68b",
+    "muted": "#b6a3a8"
+  },
+  "fonts": {
+    "body": "system-ui / YuGothic",
+    "display": "Hatch (optional) / M PLUS Rounded 1c",
+    "num": "Hatch / M PLUS Rounded 1c"
+  },
+  "radii": {
+    "window": "10px",
+    "icon": "8px",
+    "button": "8px",
+    "menuHover": "8px"
+  },
+  "elevation": {
+    "window": "10px 10px 0 rgba(138,128,119,0.45)"
+  },
+  "components": {
+    "titleBarHeight": "40px",
+    "titleBarVariants": ["red", "gray", "blue", "yellow"],
+    "desktopIconSize": "72px",
+    "menuBarHeight": "approx 32-40px",
+    "windowControls": "3 circular buttons on the left"
+  },
+  "pptBgRole": "cream",
+  "pptFgRole": "ink",
+  "pptPanelRole": "paper",
+  "pptPanelFgRole": "ink"
+}

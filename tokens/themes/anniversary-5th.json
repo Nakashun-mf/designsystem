@@ -1,0 +1,31 @@
+{
+  "id": "anniversary-5th",
+  "label": "5th Anniversary Hub",
+  "labelJa": "5th Anniversary Project",
+  "source": "https://5th.uishigure.com/",
+  "colors": {
+    "brand": "#e63644",
+    "brandDeep": "#c92c38",
+    "brandDarker": "#201e1e",
+    "ink": "#201e1e",
+    "inkSoft": "#665a5a",
+    "paper": "#fbeecc",
+    "gold": "#ecffc5",
+    "goldSoft": "#e8f0d7",
+    "accent": "#e63644",
+    "muted": "#cccccc",
+    "surface": "#ffffff",
+    "white": "#ffffff"
+  },
+  "fonts": {
+    "body": "Yu Gothic",
+    "display": "M PLUS 1p",
+    "num": "M PLUS 1p",
+    "aux": "M PLUS 1p"
+  },
+  "mood": "bright memorial hub / warm sand",
+  "pptBgRole": "paper",
+  "pptFgRole": "ink",
+  "pptPanelRole": "white",
+  "pptPanelFgRole": "ink"
+}

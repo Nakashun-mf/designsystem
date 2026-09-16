@@ -1,0 +1,31 @@
+{
+  "id": "uitopia",
+  "label": "Uitopia",
+  "labelJa": "しぐれうい展 Uitopia",
+  "source": "https://7th.uishigure.com/uitopia/",
+  "colors": {
+    "brand": "#ec4b78",
+    "brandDeep": "#c93a62",
+    "brandDarker": "#a83254",
+    "ink": "#282828",
+    "inkSoft": "#646464",
+    "paper": "#ffffff",
+    "gold": "#645eff",
+    "goldSoft": "#f17a9c",
+    "accent": "#645eff",
+    "muted": "#b4b4b4",
+    "surface": "#b4b4b4",
+    "white": "#ffffff"
+  },
+  "fonts": {
+    "body": "DotGothic16",
+    "display": "DotGothic16",
+    "num": "DotGothic16",
+    "aux": "DotGothic16"
+  },
+  "mood": "desktop OS / folder / pixel UI",
+  "pptBgRole": "surface",
+  "pptFgRole": "ink",
+  "pptPanelRole": "paper",
+  "pptPanelFgRole": "ink"
+}

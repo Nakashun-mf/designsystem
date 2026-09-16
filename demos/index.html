@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ja" data-theme="soft-cloud">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ふわふわアンブレラ世界観 DS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarante&family=M+PLUS+Rounded+1c:wght@400;700;800&family=Young+Serif&family=Zen+Maru+Gothic:wght@400;500;700&family=DotGothic16&family=IBM+Plex+Sans+JP:wght@600;700&family=Inter:wght@400;700&family=M+PLUS+1p:wght@400;700;800&family=Murecho:wght@500;700;800&family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/os-ui.css" />
+    <style>
+      .theme-switch {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.85rem 1rem;
+        background: color-mix(in srgb, var(--ds-paper) 78%, transparent);
+        backdrop-filter: blur(12px);
+      }
+      .theme-switch button {
+        appearance: none;
+        border: none;
+        background: var(--ds-cream);
+        color: var(--ds-ink);
+        font: inherit;
+        font-size: 0.78rem;
+        font-weight: 700;
+        padding: 0.45rem 0.95rem;
+        cursor: pointer;
+        border-radius: 999px;
+        box-shadow: 0 6px 16px rgba(242, 160, 176, 0.16);
+      }
+      .theme-switch button[aria-pressed="true"] {
+        background: linear-gradient(180deg, var(--ds-brand), var(--ds-brand-deep));
+        color: var(--ds-on-brand);
+      }
+      .demo-grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+      @media (min-width: 900px) {
+        .demo-grid.two {
+          grid-template-columns: 1.1fr 0.9fr;
+        }
+        .demo-grid.three {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      footer.ds-foot {
+        padding: 3rem 0 4rem;
+        font-size: 0.85rem;
+        color: var(--ds-ink-soft);
+      }
+      .cloud-a {
+        top: 6%;
+        left: -3%;
+      }
+      .cloud-b {
+        top: 14%;
+        right: -2%;
+      }
+      .cloud-c {
+        top: 58%;
+        left: 6%;
+      }
+      .cloud-d {
+        bottom: 6%;
+        right: 10%;
+      }
+      .ref-note {
+        font-size: 0.85rem;
+        color: var(--ds-ink-soft);
+      }
+      .ref-note a {
+        color: var(--ds-umbrella);
+      }
+    </style>
+  </head>
+  <body class="ds-body ds-sky">
+    <div class="ds-cloudscape" aria-hidden="true">
+      <div class="ds-cloud ds-cloud--lg ds-cloud--blush ds-cloud--float-a cloud-a"></div>
+      <div class="ds-cloud ds-cloud--md ds-cloud--lavender ds-cloud--float-b cloud-b"></div>
+      <div class="ds-cloud ds-cloud--md ds-cloud--peach ds-cloud--float-c cloud-c"></div>
+      <div class="ds-cloud ds-cloud--sm ds-cloud--float-a cloud-d"></div>
+      <span class="ds-bokeh ds-bokeh--a"></span>
+      <span class="ds-bokeh ds-bokeh--b"></span>
+      <span class="ds-bokeh ds-bokeh--c"></span>
+      <span class="ds-bokeh ds-bokeh--d"></span>
+    </div>
+
+    <div class="theme-switch" role="toolbar" aria-label="テーマ切替">
+      <button type="button" data-theme-set="soft-cloud" aria-pressed="true">ふわアンブレラ ★</button>
+      <button type="button" data-theme-set="uindows" aria-pressed="false">Uindows OS</button>
+      <button type="button" data-theme-set="wishing-umbrella" aria-pressed="false">Live Red</button>
+      <button type="button" data-theme-set="uitopia" aria-pressed="false">Uitopia</button>
+      <button type="button" data-theme-set="masterpiece" aria-pressed="false">masterpiece</button>
+      <button type="button" data-theme-set="anniversary-5th" aria-pressed="false">5th</button>
+    </div>
+
+    <header class="ds-container">
+      <nav class="ds-nav ds-rise">
+        <a class="ds-nav__brand" href="#">Wishing Fluffy</a>
+        <ul class="ds-nav__list">
+          <li><a href="#world"><span class="ds-nav__num">01</span>World</a></li>
+          <li><a href="#os"><span class="ds-nav__num">02</span>Uindows</a></li>
+          <li><a href="#colors"><span class="ds-nav__num">03</span>Colors</a></li>
+          <li><a href="#ppt"><span class="ds-nav__num">04</span>PowerPoint</a></li>
+        </ul>
+      </nav>
+
+      <section class="ds-hero">
+        <p class="ds-eyebrow ds-rise ds-rise-delay-1">
+          <span class="ds-poms" aria-hidden="true"><span class="ds-pom"></span><span class="ds-pom"></span><span class="ds-pom"></span></span>
+          WISHING UMBRELLA MOOD · v1.2.0
+        </p>
+        <p class="ds-display-en ds-rise ds-rise-delay-1" style="margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--ds-umbrella)">
+          Wishing Umbrella
+        </p>
+        <h1 class="ds-title ds-rise ds-rise-delay-2">傘の下は、<br />ふわふわの秘密基地。</h1>
+        <p class="ds-lead ds-rise ds-rise-delay-3">
+          <a href="https://www.youtube.com/watch?v=qR2pggPX_Sc" style="color: inherit">Wishing Umbrella MV</a>
+          のような、暖色ピーチ・やわらかい光・青い傘・ぽむぽむした丸みの世界観を、サイトとパワポで再現するためのデザインシステムです。
+        </p>
+        <div class="ds-cta-row ds-rise ds-rise-delay-3">
+          <a class="ds-btn ds-btn--umbrella" href="#motifs">傘とぽむぽむ</a>
+          <a class="ds-btn ds-btn--ghost" href="#ppt">パワポテンプレ</a>
+        </div>
+        <div class="ds-rise ds-rise-delay-3" style="margin-top: 1rem">
+          <span class="ds-umbrella" aria-hidden="true"
+            ><span class="ds-umbrella__canopy"></span><span class="ds-umbrella__stick"></span
+          ></span>
+        </div>
+      </section>
+    </header>
+
+    <main class="ds-container">
+      <section class="ds-section" id="world">
+        <div class="ds-section__head">
+          <h2 class="ds-display">World</h2>
+          <span class="ds-display-en">fluffy cute</span>
+        </div>
+        <div class="demo-grid two">
+          <div class="ds-panel">
+            <p class="ds-eyebrow">Reference</p>
+            <p>
+              雨の日を寂しさじゃなく「楽しいショー／秘密基地」に変える温度感。背景は暖色のぼかし、アクセントはロイヤルブルーの傘、形は全部まるい。
+            </p>
+            <p class="ref-note" style="margin-bottom: 0">
+              参照（公式MV）:
+              <a href="https://www.youtube.com/watch?v=qR2pggPX_Sc" rel="noopener" target="_blank"
+                >youtube.com/watch?v=qR2pggPX_Sc</a
+              >
+            </p>
+          </div>
+          <div class="ds-panel ds-panel--cloud" style="display: grid; place-items: center; min-height: 220px">
+            <div>
+              <div class="ds-cloud ds-cloud--lg ds-cloud--peach" style="position: relative; margin: 2rem auto 0"></div>
+              <div class="ds-poms" style="justify-content: center; margin-top: 1.5rem">
+                <span class="ds-pom"></span><span class="ds-pom"></span><span class="ds-pom"></span
+                ><span class="ds-pom"></span><span class="ds-pom"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="os">
+        <div class="ds-section__head">
+          <h2 class="ds-display">Uindows UI</h2>
+          <span class="ds-display-en">desktop OS</span>
+        </div>
+        <p class="ds-lead" style="margin-bottom: 1.25rem">
+          ネットで「uindows」と呼ばれるデスクトップOS風UI（ファン制作の
+          <a href="https://leiros.cloudfree.jp/uios/uios.html" target="_blank" rel="noopener">Uindow OS</a>
+          や、公式
+          <a href="https://7th.uishigure.com/uitopia/" target="_blank" rel="noopener">Uitopia</a>
+          のコンピュータ概念）から、タイトルバー色分け・ずれた影・角丸アイコンを部品化しています。
+        </p>
+        <div class="ds-os-desktop" data-theme="uindows">
+          <div class="ds-os-menubar">
+            <div class="ds-os-menubar__left">
+              <span class="ds-os-menubar__item">File</span>
+              <span class="ds-os-menubar__item">Edit</span>
+              <span class="ds-os-menubar__item">View</span>
+              <span class="ds-os-menubar__item">Tools</span>
+              <span class="ds-os-menubar__item">Help</span>
+            </div>
+            <div class="ds-os-menubar__right">
+              <span>あ</span>
+              <span>📶</span>
+            </div>
+          </div>
+          <div class="ds-os-stage">
+            <div class="ds-os-icons" aria-hidden="true">
+              <button class="ds-os-icon" type="button">🎨</button>
+              <button class="ds-os-icon" type="button">🌂</button>
+              <button class="ds-os-icon" type="button">🎵</button>
+              <button class="ds-os-icon" type="button">📅</button>
+              <button class="ds-os-icon" type="button">🖼</button>
+              <button class="ds-os-icon" type="button">⏰</button>
+            </div>
+            <article class="ds-os-window" style="margin-top: 0.5rem">
+              <header class="ds-os-titlebar ds-os-titlebar--red">
+                <div class="ds-os-controls">
+                  <button type="button" aria-label="close"></button>
+                  <button type="button" aria-label="max"></button>
+                  <button type="button" aria-label="min"></button>
+                </div>
+                <div class="ds-os-caption">Event Calendar</div>
+              </header>
+              <div class="ds-os-body">
+                <p style="margin-top: 0">
+                  タイトルバーは red / gray / blue / yellow。ウィンドウは
+                  <code>10px</code> 角丸＋<code>10px 10px 0</code> のずれた影が特徴です。
+                </p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap">
+                  <span class="ds-os-titlebar ds-os-titlebar--gray" style="position: static; padding: 0.35rem 0.7rem; border-radius: 8px"
+                    >gray</span
+                  >
+                  <span class="ds-os-titlebar ds-os-titlebar--blue" style="position: static; padding: 0.35rem 0.7rem; border-radius: 8px"
+                    >blue</span
+                  >
+                  <span class="ds-os-titlebar ds-os-titlebar--yellow" style="position: static; padding: 0.35rem 0.7rem; border-radius: 8px"
+                    >yellow</span
+                  >
+                </div>
+              </div>
+            </article>
+            <div class="ds-os-dock" aria-hidden="true"><span>🌐</span><span>📁</span><span>终端</span></div>
+          </div>
+        </div>
+        <div class="demo-grid two" style="margin-top: 1.5rem">
+          <div class="ds-os-login">
+            <div>
+              <p class="ds-os-login__title">Uindow OS</p>
+              <p style="margin: 0">Login to fluffy desktop</p>
+              <button class="ds-os-login__btn" type="button">ログイン</button>
+            </div>
+          </div>
+          <div class="ds-panel">
+            <p class="ds-eyebrow">Pattern notes</p>
+            <ul style="margin: 0.5rem 0 0; padding-left: 1.1rem; color: var(--ds-ink-soft)">
+              <li>コーラルログイン面 `#ff7b87`</li>
+              <li>メニューバー `#fff0ed`</li>
+              <li>アイコン台 `#8a7f78` 72×72 / radius 8</li>
+              <li>タイトルバー左右に丸い操作ボタン</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="colors">
+        <div class="ds-section__head">
+          <h2 class="ds-display">Colors</h2>
+        </div>
+        <div class="ds-swatch-grid" id="swatches"></div>
+      </section>
+
+      <section class="ds-section" id="motifs">
+        <div class="ds-section__head">
+          <h2 class="ds-display">Motifs</h2>
+        </div>
+        <div class="demo-grid three">
+          <article class="ds-panel" style="text-align: center">
+            <span class="ds-umbrella" aria-hidden="true"
+              ><span class="ds-umbrella__canopy"></span><span class="ds-umbrella__stick"></span
+            ></span>
+            <h3 class="ds-display" style="margin: 1rem 0 0.4rem">Umbrella</h3>
+            <p style="margin: 0; color: var(--ds-ink-soft)">青い傘＝守ってくれるかわいい屋根</p>
+          </article>
+          <article class="ds-panel" style="text-align: center">
+            <div class="ds-poms" style="justify-content: center; margin: 1.4rem 0">
+              <span class="ds-pom"></span><span class="ds-pom"></span><span class="ds-pom"></span
+              ><span class="ds-pom"></span><span class="ds-pom"></span>
+            </div>
+            <h3 class="ds-display" style="margin: 0.4rem 0">Pom-pom</h3>
+            <p style="margin: 0; color: var(--ds-ink-soft)">衣装のぽむぽむをUIの点々に</p>
+          </article>
+          <article class="ds-panel" style="text-align: center">
+            <div style="position: relative; height: 72px; margin: 0.6rem 0">
+              <span class="ds-bokeh ds-bokeh--a" style="position: absolute; top: 20%; left: 30%"></span>
+              <span class="ds-bokeh ds-bokeh--b" style="position: absolute; top: 10%; left: 55%"></span>
+              <span class="ds-bokeh ds-bokeh--d" style="position: absolute; top: 40%; left: 42%"></span>
+            </div>
+            <h3 class="ds-display" style="margin: 0.4rem 0">Bokeh</h3>
+            <p style="margin: 0; color: var(--ds-ink-soft)">ふわっと光る丸いボケ</p>
+          </article>
+        </div>
+        <div class="demo-grid two" style="margin-top: 1.5rem">
+          <article class="ds-panel">
+            <h3 class="ds-display" style="margin-top: 0">やわらか Info</h3>
+            <dl class="ds-dl">
+              <div class="ds-dl__row"><dt>TITLE</dt><dd>Wishing Umbrella</dd></div>
+              <div class="ds-dl__row"><dt>MOOD</dt><dd>ふわふわ魔法の日常</dd></div>
+              <div class="ds-dl__row"><dt>ACCENT</dt><dd>ブルーの傘</dd></div>
+            </dl>
+            <div class="ds-cta-row" style="margin-top: 1.2rem">
+              <button class="ds-btn" type="button">みる</button>
+              <button class="ds-btn ds-btn--umbrella" type="button">傘ボタン</button>
+              <button class="ds-btn ds-btn--cloud" type="button">くも</button>
+            </div>
+          </article>
+          <article class="ds-window">
+            <div class="ds-window__bar">
+              <div class="ds-window__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span>secret-base.txt</span>
+            </div>
+            <div class="ds-window__body">
+              <p class="ds-eyebrow">under the umbrella</p>
+              <p>角ばった枠より、クッションみたいな面。光はぼかして、影はピンク寄り。</p>
+              <a class="ds-btn ds-btn--umbrella" href="#">ひらく</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ds-section" id="ppt">
+        <div class="ds-section__head">
+          <h2 class="ds-display">PowerPoint</h2>
+        </div>
+        <div class="ds-panel">
+          <p style="margin-top: 0">
+            暖色空＋青い傘＋ぽむぽむのパワポを再生成しています。まずは
+            <code>soft-cloud-full.pptx</code> / <code>pack-soft-cloud-only.pptx</code>。
+          </p>
+          <div class="ds-cta-row">
+            <a class="ds-btn ds-btn--umbrella" href="../ppt/templates/soft-cloud-full.pptx">フルデッキ</a>
+            <a class="ds-btn ds-btn--ghost" href="../ppt/POWERPOINT.md">一覧</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ds-container ds-foot">
+      <p>
+        公式MVのトーンを参考にした学習・ファン制作用です。映像・ロゴ・キャラの複製は含みません。出典:
+        <a href="../docs/SOURCES.md">SOURCES</a>
+      </p>
+    </footer>
+
+    <script>
+      const swatchKeys = [
+        ["brand", "--ds-brand"],
+        ["peach", "--ds-peach"],
+        ["blush", "--ds-blush"],
+        ["cream", "--ds-cream"],
+        ["lavender", "--ds-lavender"],
+        ["umbrella", "--ds-umbrella"],
+        ["gold", "--ds-gold"],
+        ["ink", "--ds-ink"],
+      ];
+      function renderSwatches() {
+        const root = document.getElementById("swatches");
+        const styles = getComputedStyle(document.documentElement);
+        root.innerHTML = swatchKeys
+          .map(([name, key]) => {
+            const value = styles.getPropertyValue(key).trim() || "#ccc";
+            return `<div class="ds-swatch"><div class="ds-swatch__chip" style="background:${value}"></div><div class="ds-swatch__meta"><strong>${name}</strong><br>${value}</div></div>`;
+          })
+          .join("");
+      }
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        document.querySelectorAll("[data-theme-set]").forEach((btn) => {
+          btn.setAttribute("aria-pressed", String(btn.dataset.themeSet === theme));
+        });
+        renderSwatches();
+      }
+      document.querySelectorAll("[data-theme-set]").forEach((btn) => {
+        btn.addEventListener("click", () => setTheme(btn.dataset.themeSet));
+      });
+      renderSwatches();
+    </script>
+  </body>
+</html>

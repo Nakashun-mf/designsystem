@@ -1,0 +1,31 @@
+{
+  "id": "wishing-umbrella",
+  "label": "Wishing Umbrella",
+  "labelJa": "Birthday Live Wishing Umbrella",
+  "source": "https://7th.uishigure.com/wishingumbrella/",
+  "colors": {
+    "brand": "#aa1414",
+    "brandDeep": "#8e0000",
+    "brandDarker": "#7c0017",
+    "ink": "#000000",
+    "inkSoft": "#2d0000",
+    "paper": "#fff8ec",
+    "gold": "#ffda00",
+    "goldSoft": "#ffed8c",
+    "accent": "#2c3c9f",
+    "muted": "#b4b4b4",
+    "surface": "#310101",
+    "white": "#ffffff"
+  },
+  "fonts": {
+    "body": "IBM Plex Sans JP",
+    "display": "Amarante",
+    "num": "Rozha One",
+    "aux": "Young Serif"
+  },
+  "mood": "circus-red / umbrella / night festival",
+  "pptBgRole": "inkSoft",
+  "pptFgRole": "paper",
+  "pptPanelRole": "paper",
+  "pptPanelFgRole": "ink"
+}
